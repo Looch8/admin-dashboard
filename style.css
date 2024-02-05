@@ -1,0 +1,24 @@
+main {
+	display: grid;
+	gap: 15px;
+}
+
+header {
+	border: 1px solid blue;
+}
+
+article {
+	border: 1px solid green;
+}
+
+nav {
+	border: 1px solid red;
+}
+
+aside {
+	border: 1px solid black;
+}
+
+footer {
+	border: 1px solid blueviolet;
+}
