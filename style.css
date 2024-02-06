@@ -7,28 +7,31 @@ html {
 main {
 	height: 100vh;
 	display: grid;
-	gap: 15px;
+	/* gap: 15px; */
 	grid-template-columns: 1fr 4fr 1fr;
-	grid-template-rows: 70px auto 50px;
+	grid-template-rows: 100px auto 50px;
 	grid-template-areas:
 		"header header header"
 		"sidebar content ads"
 		"footer footer footer";
+	background-color: #fff7ed;
 }
 
 header {
 	border: 1px solid blue;
 	grid-area: header;
 	grid-column-start: 2;
-	/* grid-column-end: 3; */
+	background-color: #fff7ed;
 }
 
 article {
 	border: 1px solid green;
 	grid-area: content;
+	background-color: #ffedd5;
 }
 
 nav {
+	background-color: #fb923c;
 	border: 1px solid red;
 	grid-area: sidebar;
 	grid-row-start: 1;
@@ -37,9 +40,11 @@ nav {
 aside {
 	border: 1px solid black;
 	grid-area: ads;
+	background-color: #ffedd5;
 }
 
 footer {
 	border: 1px solid blueviolet;
 	grid-area: footer;
+	background-color: #ffedd5;
 }
