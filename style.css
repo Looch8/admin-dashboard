@@ -2,6 +2,7 @@ body,
 html {
 	height: 100vh;
 	margin: 0;
+	font-family: ;
 }
 
 main {
@@ -9,7 +10,7 @@ main {
 	display: grid;
 	/* gap: 15px; */
 	grid-template-columns: 1fr 4fr 1fr;
-	grid-template-rows: 100px auto 50px;
+	grid-template-rows: 100px auto 70px;
 	grid-template-areas:
 		"header header header"
 		"sidebar content ads"
@@ -35,8 +36,29 @@ nav {
 	border: 1px solid red;
 	grid-area: sidebar;
 	grid-row-start: 1;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 0.5fr 1fr 1fr;
 }
 
+nav > ul > li {
+	list-style-type: none;
+	padding: 8px;
+}
+
+nav > h1 {
+	text-align: center;
+}
+
+.nav-links {
+	grid-row-start: 2;
+	grid-row-end: 3;
+}
+
+.nav-settings {
+	grid-row-start: 3;
+	grid-row-end: 4;
+}
 aside {
 	border: 1px solid black;
 	grid-area: ads;
