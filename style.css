@@ -10,11 +10,11 @@ main {
 	display: grid;
 	/* gap: 15px; */
 	grid-template-columns: 1fr 4fr 1fr;
-	grid-template-rows: 100px auto 70px;
+	grid-template-rows: 170px auto 70px;
 	grid-template-areas:
 		"header header header"
 		"sidebar content ads"
-		"footer footer footer";
+		"sidebar footer footer";
 	background-color: #fff7ed;
 }
 
@@ -23,8 +23,28 @@ header {
 	grid-area: header;
 	grid-column-start: 2;
 	background-color: #fff7ed;
+
+	display: grid;
+	grid-template-areas:
+		"search search user"
+		"greeting greeting buttons";
 }
 
+.search-bar {
+	grid-area: search;
+}
+
+.current-user {
+	grid-area: user;
+}
+
+.greeting {
+	grid-area: greeting;
+}
+
+.buttons {
+	grid-area: buttons;
+}
 article {
 	border: 1px solid green;
 	grid-area: content;
