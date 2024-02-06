@@ -1,24 +1,46 @@
+body,
+html {
+	height: 100%;
+	margin: 0;
+}
+
 main {
+	height: 100%;
+	padding: 1px;
 	display: grid;
 	gap: 15px;
+	grid-template-columns: 1fr 4fr 1fr;
+	grid-template-rows: 70px auto 50px;
+	grid-template-areas:
+		"header header header"
+		"sidebar content ads"
+		"footer footer footer";
 }
 
 header {
 	border: 1px solid blue;
+	grid-area: header;
+	grid-column-start: 2;
+	/* grid-column-end: 3; */
 }
 
 article {
 	border: 1px solid green;
+	grid-area: content;
 }
 
 nav {
 	border: 1px solid red;
+	grid-area: sidebar;
+	grid-row-start: 1;
 }
 
 aside {
 	border: 1px solid black;
+	grid-area: ads;
 }
 
 footer {
 	border: 1px solid blueviolet;
+	grid-area: footer;
 }
