@@ -49,20 +49,24 @@ article {
 	border: 1px solid green;
 	grid-area: content;
 	background-color: #ffedd5;
-	padding-left: 50px;
+	/* padding-left: 50px; */
 }
 
 container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 150px 150px 150px;
-	gap: 16px;
+	/* gap: 16px; */
+	row-gap: 50px;
+	place-items: center;
 }
 
 article > container > div {
 	border: black 1px solid;
 	max-width: 70%;
 	padding: 20px;
+	padding-bottom: 80px;
+	margin-top: 50px;
 }
 
 nav {
@@ -97,6 +101,22 @@ aside {
 	border: 1px solid black;
 	grid-area: ads;
 	background-color: #ffedd5;
+
+	display: grid;
+	gap: 50px;
+	place-items: center;
+}
+
+.announcement-container {
+	border: solid 1px black;
+	padding: 20px;
+	max-width: 80%;
+}
+
+.trending-container {
+	border: black 1px solid;
+	max-width: 80%;
+	padding: 20px;
 }
 
 footer {
