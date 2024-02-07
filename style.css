@@ -27,10 +27,23 @@ header {
 	grid-template-areas:
 		"search search user"
 		"greeting greeting buttons";
+	grid-template-columns: 100px 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
 }
 
 .search-bar {
-	grid-area: search;
+	/* grid-area: search; */
+	grid-column-start: 2;
+	padding-top: 20px;
+	background-color: ;
+}
+
+input {
+	width: 500px;
+	height: 20px;
+	border-radius: 5px;
+	border: 1px black solid;
+	background-color: #ffedd5;
 }
 
 .current-user {
@@ -38,7 +51,8 @@ header {
 }
 
 .greeting {
-	grid-area: greeting;
+	/* grid-area: greeting; */
+	grid-column-start: 2;
 }
 
 .buttons {
@@ -47,6 +61,7 @@ header {
 article {
 	grid-area: content;
 	background-color: #ffedd5;
+	padding: 10px;
 	/* padding-left: 50px; */
 }
 
